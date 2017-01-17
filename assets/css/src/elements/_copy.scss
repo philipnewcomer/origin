@@ -1,0 +1,27 @@
+abbr[title],
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+	text-decoration: none;
+}
+
+address {
+	margin: 0 0 $base__margin;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+mark,
+ins {
+	background: #ffff00;
+	text-decoration: none;
+}
+
+p {
+	margin: 0 0 $base__margin;
+}

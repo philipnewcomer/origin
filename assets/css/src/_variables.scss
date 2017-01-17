@@ -1,0 +1,20 @@
+/* Colors */
+
+$color__link: royalblue;
+$color__link-visited: purple;
+$color__link-hover: midnightblue;
+
+/* Structure */
+
+$base__font-size: 1rem;
+$base__multiplier: 1.5;
+$base__margin: 1em * $base__multiplier;
+
+/* Typography */
+
+$font__body: "Helvetica Neue", Helvetica, sans-serif;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__headings: "Georgia", serif;
+$font__pre: "Courier New", Courier, monospace;
+
+$font__line-height: $base__multiplier;

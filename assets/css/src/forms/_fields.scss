@@ -1,0 +1,15 @@
+input,
+textarea {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: $base__margin / 4 $base__margin / 2;
+}
+
+select {
+	border: 1px solid #ccc;
+	max-width: 100%;
+}
+
+textarea {
+	width: 100%;
+}

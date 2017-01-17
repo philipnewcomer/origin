@@ -1,0 +1,14 @@
+.content {
+
+	&-meta {
+		margin: 0 0 $base__margin;
+	}
+}
+
+.hentry {
+	margin: 0 0 $base__margin * 2;
+}
+
+.updated:not(.published){
+	display: none;
+}

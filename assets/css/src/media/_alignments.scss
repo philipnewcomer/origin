@@ -1,0 +1,17 @@
+.alignleft {
+	display: inline;
+	float: left;
+	margin: 0 $base__margin $base__margin / 2 0;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin: 0 0 $base__margin / 2 $base__margin;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto $base__margin;
+}

@@ -1,0 +1,23 @@
+$code__font-size_multiplier: 0.9375;
+
+pre {
+	background-color: #eee;
+	font-family: $font__pre;
+	font-size: 1em * $code__font-size_multiplier;
+	margin: 0 0 $base__margin / $code__font-size_multiplier;
+	max-width: 100%;
+	overflow: auto;
+	padding: $base__margin / $code__font-size_multiplier;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: $font__code;
+	font-size: 1em / $code__font-size_multiplier;
+}
+
+pre code {
+	font-size: 1em;
+}

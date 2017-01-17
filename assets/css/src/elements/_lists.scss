@@ -1,0 +1,19 @@
+ul,
+ol {
+	margin: 0 0 $base__margin;
+	padding-left: $base__margin;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	padding-left: $base__margin * 2;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 $base__margin $base__margin;
+}

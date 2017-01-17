@@ -1,0 +1,19 @@
+.site-content {
+	@extend .clearfix;
+}
+
+.site-main {
+	float: left;
+	margin: 0 -33.333% 0 0;
+	width: 100%;
+}
+
+.site-main-inner {
+	margin: 0 33.333% 0 0;
+	padding-right: $base__margin * 2;
+}
+
+.sidebar-primary {
+	float: right;
+	width: 33.333%;
+}

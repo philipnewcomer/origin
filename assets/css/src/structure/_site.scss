@@ -1,0 +1,9 @@
+body {
+	font-size: $base__font-size;
+}
+
+.site {
+	@extend .clearfix;
+	margin: 0 auto;
+	max-width: 64rem;
+}

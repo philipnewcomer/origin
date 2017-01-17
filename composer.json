@@ -1,0 +1,15 @@
+{
+	"name": "philipnewcomer/origin",
+	"description": "A WordPress starter theme.",
+	"require": {
+		"aaronholbrook/autoload": "^1.2"
+	},
+	"license": "GPLv2",
+	"authors": [
+		{
+			"name": "Philip Newcomer",
+			"email": "contact@philipnewcomer.net"
+		}
+	],
+	"minimum-stability": "dev"
+}
