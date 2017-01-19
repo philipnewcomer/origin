@@ -16,8 +16,7 @@ $time_string = sprintf( $time_string,
 	esc_html( get_the_modified_date() )
 );
 
-$date_html = sprintf(
-	esc_html_x( 'Posted on %s', 'post date', 'origin' ),
+$date_html = sprintf( esc_html_x( 'Posted on %s', 'post date', 'origin' ),
 	sprintf( '<a href="%s" rel="bookmark">%s</a>',
 		esc_url( get_permalink() ),
 		$time_string
