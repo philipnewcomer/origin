@@ -23,14 +23,19 @@ $date_html = sprintf(
 		$time_string
 	)
 );
-
-$author_html = sprintf(
-	esc_html_x( 'by %s', 'post author', 'origin' ),
-	sprintf( '<span class="author vcard"><a class="url fn n" href="%s">%s</a></span>',
-		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-		esc_html( get_the_author() )
-	)
-);
+$author_string = esc_html_x( 'by %s', 'post author', 'origin' );
+if ( function_exists( 'coauthors_posts_links' ) ) {
+	$author_html = sprintf( $author_string,
+		coauthors_posts_links( null, null, null, null, false )
+	);
+} else {
+	$author_html = sprintf( $author_string,
+		sprintf( '<span class="author vcard"><a class="url fn n" href="%s">%s</a></span>',
+			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+			esc_html( get_the_author() )
+		)
+	);
+}
 ?>
 
 <div class="content-meta">
