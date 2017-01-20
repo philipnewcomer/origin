@@ -46,9 +46,9 @@ add_action( 'after_setup_theme', function() {
  * Enqueue scripts and styles.
  */
 add_action( 'wp_enqueue_scripts', function() {
+    $script_ext = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '.js' : '.min.js';
 
-	wp_enqueue_script( 'navigation', ORIGIN_THEME_URL . '/assets/js/navigation.js', [], ORIGIN_THEME_VERSION, true );
-	wp_enqueue_script( 'skip-link-focus-fix', ORIGIN_THEME_URL . '/assets/js/skip-link-focus-fix.js', [], ORIGIN_THEME_VERSION, true );
+	wp_enqueue_script( 'main', ORIGIN_THEME_URL . "/assets/js/main{$script_ext}", [], ORIGIN_THEME_VERSION, true );
 
 	wp_enqueue_style( 'main', ORIGIN_THEME_URL . '/assets/css/main.css', [], ORIGIN_THEME_VERSION );
 
