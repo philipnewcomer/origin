@@ -7,3 +7,7 @@ body {
 	margin: 0 auto;
 	max-width: 64rem;
 }
+
+.site-content {
+	@extend .clearfix;
+}
