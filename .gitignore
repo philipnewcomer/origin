@@ -1,5 +1,6 @@
 node_modules/
 /vendor/
-assets/css/main.css
-assets/css/main.css.map
-assets/js/*.js
+assets/css/main*.css
+assets/css/main*.css.map
+assets/js/main*.js
+assets/js/main*.js.map
