@@ -1,0 +1,12 @@
+a {
+	&,
+	&:visited {
+		color: $primary;
+		text-decoration: none;
+	}
+
+	&:focus,
+	&:hover {
+		text-decoration: underline;
+	}
+}

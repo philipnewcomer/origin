@@ -48,9 +48,10 @@ add_action( 'after_setup_theme', function() {
 add_action( 'wp_enqueue_scripts', function() {
 	$min_ext = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 
-	wp_enqueue_script( 'main', ORIGIN_THEME_URL . "/assets/js/main{$min_ext}", [], ORIGIN_THEME_VERSION, true );
+	wp_enqueue_script( 'main', ORIGIN_THEME_URL . "/assets/js/main{$min_ext}.js", [], ORIGIN_THEME_VERSION, true );
 
-	wp_enqueue_style( 'main', ORIGIN_THEME_URL . "/assets/css/main{$min_ext}.css", [], ORIGIN_THEME_VERSION );
+	wp_register_style( 'sanitize', "https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/4.1.0/sanitize{$min_ext}.css", [], '4.1.0' );
+	wp_enqueue_style( 'main', ORIGIN_THEME_URL . "/assets/css/main{$min_ext}.css", [ 'sanitize' ], ORIGIN_THEME_VERSION );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

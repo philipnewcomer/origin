@@ -1,20 +1,56 @@
-/* Colors */
+// Breakpoints
+$breakpoints: (
+	small: 30rem,
+	medium-small: 40rem,
+	medium: 50rem,
+	medium-large: 60rem,
+	large: 70rem,
+	xlarge: 80rem,
+);
 
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
+// Colors
+$black: #111;
+$white: #fff;
+$off-white: #f6f6f6;
 
-/* Structure */
+$gray-light: #e6e6e6;
+$gray-medium: #ccc;
+$gray-dark: #888;
 
-$base__font-size: 1rem;
-$base__multiplier: 1.5;
-$base__margin: 1em * $base__multiplier;
+$natural-green: #009f6b;
+$natural-red: #c40233;
+$natural-yellow: #ffd300;
+$natural-blue: #0087bd;
 
-/* Typography */
+$primary: $natural-blue;
+$secondary: $natural-green;
 
-$font__body: "Helvetica Neue", Helvetica, sans-serif;
-$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font__headings: "Georgia", serif;
-$font__pre: "Courier New", Courier, monospace;
+// Modular scale
+$scale-ratio: 1.618034;
+$scale-base-0: 0.875rem;
+$scale-base-1: 1rem;
 
-$font__line-height: $base__multiplier;
+$scale-0: $scale-base-0;
+$scale-1: $scale-base-1;
+$scale-2: $scale-0 * $scale-ratio;
+$scale-3: $scale-1 * $scale-ratio;
+$scale-4: $scale-2 * $scale-ratio;
+$scale-5: $scale-3 * $scale-ratio;
+$scale-6: $scale-4 * $scale-ratio;
+$scale-7: $scale-5 * $scale-ratio;
+$scale-8: $scale-6 * $scale-ratio;
+$scale-9: $scale-7 * $scale-ratio;
+$scale-10: $scale-8 * $scale-ratio;
+
+$scale-minus-1: $scale-base-1 / $scale-ratio;
+$scale-minus-2: $scale-base-0 / $scale-ratio;
+$scale-minus-3: $scale-minus-1 / $scale-ratio;
+$scale-minus-4: $scale-minus-2 / $scale-ratio;
+$scale-minus-5: $scale-minus-3 / $scale-ratio;
+
+// Paragraph
+$paragraph-spacing: $scale-3;
+
+// Typgography
+$body-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$headings-font-family: Georgia, sans-serif;

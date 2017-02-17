@@ -1,0 +1,21 @@
+body:not(.single):not(.page) {
+
+	.section-header {
+		margin-bottom: $scale-6;
+	}
+
+	.content {
+
+		&-title {
+			margin-bottom: $scale-0;
+		}
+
+		&-meta {
+			margin: 0 0 $paragraph-spacing;
+		}
+
+		& + .content {
+			margin-top: $scale-6;
+		}
+	}
+}

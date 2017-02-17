@@ -1,0 +1,20 @@
+.alignleft {
+	float: left;
+	margin: 0 $scale-2 $scale-1 0;
+}
+
+.alignright {
+	float: right;
+	margin: 0 0 $scale-1 $scale-2;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto $paragraph-spacing;
+}
+
+.alignnone {
+	display: block;
+	margin: 0 0 $paragraph-spacing;
+}

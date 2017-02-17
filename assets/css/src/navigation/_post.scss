@@ -1,0 +1,12 @@
+.post-navigation {
+	@extend .clearfix;
+	margin: 0 0 $paragraph-spacing;
+
+	.nav-previous {
+		float: left;
+	}
+
+	.nav-next {
+		float: right;
+	}
+}

@@ -1,0 +1,52 @@
+.comment-respond {
+	margin-top: $scale-4;
+}
+
+.comments {
+	margin-top: $scale-6;
+
+	&-list {
+		padding-left: 0;
+	}
+
+	ol {
+		list-style: none;
+	}
+
+	li > ol {
+		margin-left: $scale-3;
+	}
+
+	.comment {
+		margin-top: $scale-5;
+
+		.avatar {
+			float: left;
+			margin: 0 $scale-1 $scale-1 0;
+		}
+
+		&-content {
+			word-wrap: break-word;
+
+			> :last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		&-metadata {
+			font-size: $scale-0;
+		}
+
+		.reply {
+			margin-top: $scale-minus-3;
+		}
+
+		.says {
+			display: none;
+		}
+	}
+}
+
+.comments-navigation {
+	margin-top: $scale-4;
+}

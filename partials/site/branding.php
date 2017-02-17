@@ -1,7 +1,6 @@
 <div class="site-branding">
 	<?php
-	printf( '<%1$s class="site-title"><a href="%2$s" rel="home">%3$s</a></%1$s>',
-		is_front_page() && is_home() ? 'h1' : 'p',
+	printf( '<h1 class="site-title"><a href="%s" rel="home">%s</a></h1>',
 		esc_url( home_url( '/' ) ),
 		esc_html( get_bloginfo( 'name' ) )
 	);

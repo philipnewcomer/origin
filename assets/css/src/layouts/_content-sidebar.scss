@@ -1,18 +1,21 @@
 .content-layout-content-sidebar {
 
-	.site-main {
-		float: left;
-		margin: 0 -33.333% 0 0;
-		width: 100%;
-	}
+	@include breakpoint( large ) {
 
-	.site-main-inner {
-		margin: 0 33.333% 0 0;
-		padding-right: $base__margin * 2;
-	}
+		.site-main {
+			float: left;
+			margin-right: -33.333%;
+			width: 100%;
+		}
 
-	.sidebar-primary {
-		float: right;
-		width: 33.333%;
+		.site-main-inner {
+			margin-right: 33.333%;
+			padding-right: $scale-6;
+		}
+
+		.site-sidebar {
+			float: right;
+			width: 33.333%;
+		}
 	}
 }

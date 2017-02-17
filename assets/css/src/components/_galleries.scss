@@ -1,0 +1,23 @@
+.gallery {
+	font-size: 0;
+
+	&-item {
+		display: inline-block;
+		font-size: 1rem;
+		text-align: center;
+		vertical-align: top;
+
+		.gallery-columns-2 & { width: 50%; }
+		.gallery-columns-3 & { width: 33.33%; }
+		.gallery-columns-4 & { width: 25%; }
+		.gallery-columns-5 & { width: 20%; }
+		.gallery-columns-6 & { width: 16.66%; }
+		.gallery-columns-7 & { width: 14.28%; }
+		.gallery-columns-8 & { width: 12.5%; }
+		.gallery-columns-9 & { width: 11.11%; }
+
+		p {
+			margin: 0;
+		}
+	}
+}

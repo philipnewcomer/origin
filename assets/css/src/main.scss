@@ -1,33 +1,16 @@
-// Vendors
-@import "vendor/sanitize";
-
-// Partials
+// Variables
 @import "variables";
-@import "elements/accessibility";
-@import "elements/code";
-@import "elements/copy";
-@import "elements/dividers";
-@import "elements/headings";
-@import "elements/lists";
-@import "elements/quotes";
-@import "elements/tables";
-@import "elements/typography";
-@import "forms/buttons";
-@import "forms/fields";
-@import "layouts/content-sidebar";
-@import "layouts/sidebar-content";
-@import "layouts/full-width";
-@import "media/alignments";
-@import "media/captions";
-@import "media/embeds";
-@import "media/galleries";
-@import "media/images";
-@import "navigation/links";
-@import "navigation/menus";
-@import "navigation/pagination";
-@import "structure/clearfix";
-@import "structure/footer";
-@import "structure/header";
-@import "structure/content";
-@import "structure/site";
-@import "structure/widgets";
+
+// Dependencies
+@import "../../../node_modules/sass-svg-uri/svg-uri";
+
+// Helpers
+@import "helpers/helpers";
+
+// Groups
+@import "components/components";
+@import "content/content";
+@import "elements/elements";
+@import "layouts/layouts";
+@import "navigation/navigation";
+@import "site/site";

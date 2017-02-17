@@ -1,0 +1,7 @@
+.site-sidebar {
+	margin-top: $scale-6;
+
+	@include breakpoint( large ) {
+		margin-top: 0;
+	}
+}

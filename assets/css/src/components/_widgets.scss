@@ -1,0 +1,7 @@
+.widget {
+	word-wrap: break-word;
+
+	& + .widget {
+		margin-top: $scale-4;
+	}
+}

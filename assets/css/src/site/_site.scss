@@ -1,0 +1,14 @@
+@import "footer";
+@import "header";
+@import "content";
+@import "sidebar";
+
+body {
+	padding-left: $scale-1;
+	padding-right: $scale-1;
+}
+
+.site {
+	margin: 0 auto;
+	max-width: 70rem;
+}

@@ -1,4 +1,23 @@
 table {
-	margin: 0 0 $base__margin;
-	width: 100%;
+	margin: 0 0 $paragraph-spacing;
+
+	caption,
+	tfoot {
+		font-weight: bold;
+	}
+
+	th,
+	tfoot {
+		background-color: $gray-light;
+		text-align: left;
+	}
+
+	th,
+	td {
+		padding: $scale-minus-5 $scale-minus-2;
+	}
+
+	tr:nth-child( even ) {
+		background-color: $off-white;
+	}
 }

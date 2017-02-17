@@ -1,0 +1,7 @@
+@import "content-sidebar";
+@import "full-width";
+@import "sidebar-content";
+
+.site-content {
+	@extend .clearfix;
+}

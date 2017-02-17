@@ -1,0 +1,18 @@
+.single,
+.page {
+
+	.content {
+
+		&-title {
+			margin-bottom: $scale-0;
+		}
+
+		&-meta {
+			margin: 0 0 $paragraph-spacing;
+		}
+
+		&-footer {
+			margin: 0 0 $paragraph-spacing;
+		}
+	}
+}

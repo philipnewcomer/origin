@@ -1,3 +1,16 @@
 blockquote {
-	margin: 0 $base__margin;
+	border-left: 1px solid $gray-light;
+	margin: 0 0 $paragraph-spacing $scale-1;
+	padding-left: $scale-0;
+
+	p:last-of-type {
+		margin-bottom: 0;
+	}
+
+	cite {
+		color: $gray-dark;
+		display: block;
+		font-size: $scale-0;
+		margin-top: $scale-minus-3;
+	}
 }

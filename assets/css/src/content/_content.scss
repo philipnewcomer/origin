@@ -1,0 +1,10 @@
+@import "archives";
+@import "single";
+
+.content {
+	word-wrap: break-word;
+
+	.updated:not(.published) {
+		display: none;
+	}
+}

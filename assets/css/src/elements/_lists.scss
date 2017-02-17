@@ -1,19 +1,23 @@
-ul,
-ol {
-	margin: 0 0 $base__margin;
-	padding-left: $base__margin;
+ol,
+ul {
+	margin: 0 0 $paragraph-spacing;
+	padding-left: $scale-0;
+
+	li > ol,
+	li > ul {
+		margin-bottom: 0;
+		padding-left: $scale-1;
+	}
 }
 
-li > ul,
-li > ol {
-	margin-bottom: 0;
-	padding-left: $base__margin * 2;
+dl {
+	margin: 0 0 $paragraph-spacing;
 }
-
 dt {
 	font-weight: bold;
 }
 
 dd {
-	margin: 0 $base__margin $base__margin;
+	margin-left: 0;
+	padding-left: $scale-1;
 }
